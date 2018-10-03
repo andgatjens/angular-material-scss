@@ -58,6 +58,16 @@
 
     <mat-divider></mat-divider>
 
+    <mat-form-field appearance="outline">
+      <mat-select placeholder="Favorite food" disableOptionCentering>
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{ food.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
     <mat-checkbox>Check me!</mat-checkbox>
 
     <mat-divider></mat-divider>

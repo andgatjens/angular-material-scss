@@ -27,8 +27,11 @@ $material-app-theme: mat-light-theme($material-app-primary, $material-app-accent
 
 // Themed Components
 @import 'components/form-field/form-field-theme';
+@import 'components/select/select-theme';
 
 // Components
 @import 'components/form-field/form-field';
+@import 'components/select/select';
 
 @include form-field-theme($material-app-theme);
+@include select-theme($material-app-theme);
